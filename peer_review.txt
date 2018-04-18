@@ -1,0 +1,42 @@
+Name: Jason Francis
+Date: April 1, 2018
+Peer’s project: Branching-plot Novel
+
+What is something you learned by reviewing your peer’s project?
+
+
+
+
+What is something you saw in your peer’s project that you would like to apply to your own programming projects?
+
+I like how much effort he put into the elaborate story (I also appreciate a good Star Wars reference). I could probably stand to be more thorough in my projects.
+
+
+
+What suggestions would you have for your peer to improve his/her code?
+
+Commenting line by line can be a good way of making sure you understand how everything works. 
+
+
+
+
+What could have been clearer or better commented?
+
+The show_location function could stand to have a few comments. The string format() method could also help give some clarity to the option printout.
+
+
+
+Was there anything in the code that was confusing to you? If so, what?
+
+The quit condition is a little funky. It is probably an accident that it is working.
+
+
+
+What is something he/she could add to the README.md to make it more descriptive?
+
+The README.md is for the benefit of someone who is going to download and modify (or run) your code. Keeping that audience in mind should help with crafting a better README.md. It's not too bad, though.
+
+
+Pay a compliment to your peer based on the quality of his/her code.
+
+I like the creative story telling. It is also fun to see how much progress Jacob has made this semester!

@@ -83,7 +83,7 @@ world = {"start":{"description":"You are at a rest stop in space",
          "yummy":{"description":"You try to run, but the monster eats you and converts you into the exotic substance"},
          }
 
-def show_location(current_location):
+def show_location(current,current_location):
     '''Display the description of the current location, shows the options, accepts and returns user input'''
     description = current_location['description']
     options = current_location['options']
@@ -91,16 +91,21 @@ def show_location(current_location):
     print(description)
     count = 1
     for o in options:
-        print('[' + str(count) + '] ' + o)
+        print('[{0}] {1}'.format(count,o))
         count = count + 1
     print('[q] to quit')
-    choice = input('What do you decide?')
+    choice = input('What do you decide? ')
     if choice.lower() == 'q':
-        return quit()
-    new_location = results[int(choice) - 1]
+        return "quit"
+    try:    # in case they choose something other than one of the options
+        new_location = results[int(choice) - 1]
+    except: # return the current location and give an error message
+        new_location = current
+        print('\nPlease select one of the options:')
     return new_location
 
 current = "start"
 
 while current != "quit":
-        current = show_location(world[current])
+        current = show_location(current,world[current])
+print("Thanks for playing!")
